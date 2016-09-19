@@ -1,0 +1,130 @@
+<!DOCTYPR html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-sacle=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="new.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style>
+
+  </style>
+</head>
+<body style="margin:0;">
+<div class="one">
+  <img src="logo.png" class="new3">
+  	<ul style="list-style-type:none;">
+  	<li><a class="menu" href="" style="color:#3ac162;">Free Trial</a></li>
+	<li><a class="menu" href="" href="javascript:void(0);" data-toggle="modal" data-target="#signinModal">Sign Up</a></li>
+	<li><a class="menu" href="" data-toggle="popover" data-container="body" data-placement="right" data-content="Click here if you already have registered.">Sign In</a></li>
+	<li><a class="menu" href="">Organisation</a></li>
+	<li><a class="menu"  href="javascript:void(0);" data-toggle="modal" data-backdrop="static" data-target="#myModal">JAVA</a></li>
+	</ul>
+</div>
+<div class="two">
+  <img src="shield.png">
+  <h1>Learn HTML</h1>
+  <p> with treehouse </p><br><br>
+   <a href="" class="button"> Get Started </a>
+</div>
+<div class="three"><br><br><br>
+  <p style="font-size:140%;">Begin with our HTML Track</p>
+  <img src="treehouse.png" class="new2">
+  <p class style="font-size:140%;color:#384047;">Web Design</p>
+  <p>In this track, we'll learn everything necessary to build basic</p>
+  <p> websites. The code of every website is split into three layers:</p>
+  <p> Structural, Behavioral, and Presentational.In this track, we'll</p>
+  <p> explore two of the three layers: HTML and CSS.</p><br><br>
+  <a href="" class="button1" style=""> > Watch Trailer </a>
+  <a href="" class="button1" style="color:#34AD58;border:1px solid #C4AD58;"> + Learn Web Design </a>
+</div>
+<div class="four">
+  <form align="center"><br><br>
+  <p class="new">Registration Form</p><br><br><br>
+  <table align="center" class="table4">
+    <tr>
+      <td> Name: </td>
+      <td><input type="text" class="button3" placeholder="Full Name" required/></td>
+    </tr>
+    <tr>
+      <td> Gender: </td>
+      <td>Male <input type="radio" name="radio1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Female<input type="radio" name="radio1"></td>
+    </tr>
+    <tr>
+      <td> Mobile: </td>
+      <td><input type="text" class="button3" placeholder="Mobile No." required/></td>
+    </tr>
+    <tr>
+      <td> Email: </td>
+      <td><input class="button3" type="email" placeholder=" E-Mail Id" required/></td>
+    </tr><tr></tr>
+  </table>
+  </form>
+  <a href="" class="button"> Register Now </a>
+</div>
+<div class="five"><br><br><br>
+<a href="" class="button4"> Start Learning Now</a><br><br>
+<p>For more details: <a href="https://teamtreehouse.com/" target="_blank">www.teamtreehouse.com<a></p>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Welcome to Java Tutorials.</h4>
+      </div>
+      <div class="modal-body">
+        <p>This will contain the basic details on java programming language.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Got it</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="dropdown">
+  <a id="dLabel"  href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown<span class="dropdown-menu"></span></a>
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+  <li>Option one</li>
+  <li>Option two</li>
+  <li>Option three</li>
+  </ul>
+
+</div>
+<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body" style="padding:0;">
+        <button type="button" class="glyphicon glyphicon-remove closeButton" data-dismiss="modal" aria-hidden="true" ></button>
+        <div class="container-fluid">
+          <div class="row">
+          <div class="col-md-6 col-xs-6 leftSignin">
+            <h1>Login</h1>
+            <br>
+            <h4>Get acces to your</h4>
+            <h4>orders, whitelists and</h4>
+            <h4>recomendations.</h4>
+            <img src="sign.png" align="center" style="margin-top:100px">
+          </div>
+          <div class="col-md-6 col-xs-6 rightSignin">
+            <br>
+            <input type="text" placeholder="Enter Email/Mobile number." class="myText"><br><br><br>
+            <input type="text" placeholder="Enter Password." class="myText"><br><br><br>
+            <!--<input type="button" class="signin" value="Login">-->
+            <a class="signin" href="">Login</a><br><br><br><br>
+            <a class="signup" href="">New to FlipKart? Sign Up.</a>
+            <p style="color:gray; margin-top:140px;">Recover Your Social Login. <a href=""> Facebook </a> | <a href=""> Google </a></p>
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
