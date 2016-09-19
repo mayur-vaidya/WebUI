@@ -1,0 +1,99 @@
+
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+	#login{
+            border: 1px solid black;
+            width: 30em;
+            height: auto;
+            margin: auto auto;
+            padding: 1em;
+        }
+	 form input[type='text'] , form input[type='password']{
+            border: 2px solid grey;
+            border-radius: .3em;
+            width: 18em;
+            height: 2.7em;
+            font-family: Book Antiqua;
+            font-size: .9em;
+            margin-left: 7.7em;
+            margin-top: 0em;
+	}
+		
+        form input[value="Register"] {
+            font-family: Magneto;
+            font-size: 15px;
+            color: white;
+            background-color: darkseagreen;
+            border: .5px black;
+            padding: 3.5px;
+            width: 10em;
+            font-weight: bold;
+            height: 2.5em;
+            border-radius: .3em;
+            margin-left: 9em;
+            margin-top: 1em;
+	}
+	
+        form h1{
+            font-size: 2em; 
+            text-align: center;
+	}
+	form h2{
+            font-size: 1.5em;
+            color: grey;
+            text-align: center;
+	}
+	
+        form a{
+            color: grey;
+            -webkit-font-smoothing: antialiased;
+            text-decoration:none;
+            margin-left: 2em;
+            font-weight: bold;
+            font-size: 1.1em;
+	}
+		
+        form a:hover{
+            color: black;
+            -webkit-font-smoothing: antialiased;
+	}
+    </style>
+        </head>
+    <body bgcolor="" background="">
+        <div id="wrapper">
+        <section>
+        
+      <center>
+        
+        
+        </center>
+        <form action="Insert" id="login">
+            <table>
+           <h1> <font  face="Monotype Corsiva"> We believe in making things easier. </font></h1>
+        <h2> Please Enter your genuine details!!!   </h2>
+           <tr> <td> First Name: </td> <td> <input type="text" name="fname" pattern="[A-Za-z]{2,20}" placeholder="Enter the First Name" required/></td> </tr>
+             <br> <tr> <td> Last Name: </td><td> <input type="text" name="lname" pattern="[A-Za-z]{2,20}" placeholder="Enter the LastName" required/></td> </tr>
+             <br> <tr> <td> Gender:</td><td>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Male<input type="radio" value="male" name="sex"> &nbsp; &nbsp; &nbsp; &nbsp; Female <input type="radio" name="sex" value="female"></td> </tr>
+             <br> <tr> <td> Address:  </td> <td> <input type="text" name="address" pattern="{10,80}" placeholder="Current Residential Address" required/></td> </tr>
+            <br> <tr> <td> Contact: </td> <td> <input type="text" name="mobile" pattern="[0-9]{10,12}" placeholder=" Valid Mobile No." required/></td> </tr> 
+           <br> <tr> <td> User Name: </td> <td> <input type="text" name="uname" pattern="[a-z0-9._%+-]+@[a-z.-]{2,10}+\.[a-z]{2,3}$" placeholder="E-mail id" required/></td> </tr>
+           <br> <tr> <td> Password: </td> <td> <input type="password" name="upass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="At least 8 character" title="Atleast one A-Z,a-Z and a special character" required/></td> </tr> 
+           <br> <tr> <td> Re-Enter Password: </td> <td> <input type="password" name="upass1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Re type your password" title="Please enter the same password as entered in last field" required/></td> </tr> 
+           <tr> <td>  </td> <td> </td> </tr> 
+           <tr> <td>  </td> <td> </td> </tr> 
+           </table>
+            <input type="submit" value="Register">  
+            <br> <br>
+            <a href="index.html"> Back to Home Page</a>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="UserLoginPage.html">Login Page</a>
+                 
+        </form>  
+     
+     
+            </section>
+        </div>
+    </body>
+
+</html>
