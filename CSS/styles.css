@@ -1,0 +1,45 @@
+body{
+	background-color:;
+	text-align:center;
+	border:1px solid black;
+	padding:30px;
+	margin:30px;
+	}
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+p	{
+	text-align:justify;
+	color:blue;
+	text-align:center;
+	font-size:150%;
+	}
+h1 	{
+	color:#808080;
+	font-family:verdana;
+	}
+h2	{
+	color:rgb(255,135,156);
+	}
+#id1
+p	{
+ 	color:blue;
+ 	text-decoration:underline;
+ 	}
