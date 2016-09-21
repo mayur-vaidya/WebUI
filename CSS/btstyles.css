@@ -1,0 +1,258 @@
+.header-first {
+  padding-right: 20px;
+  width: 100%;
+}
+
+.background-one {
+  background-image: url("bgone.jpg");
+  background-attachment: fixed;
+  margin-top:50px;
+  background-size: cover;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center
+}
+
+.fluid-second {
+  with:100%;
+}
+
+.image-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.leftpane {
+  width: 100%;
+  height: 100px;
+}
+
+.title-one {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 45px;
+  font-family: verdana;
+  color: #FFFFFF;
+}
+
+.subtitle-one {
+  text-align:center;
+  font-size: 17px;
+  color: #FFFFFF;
+  font-family: verdana;
+}
+
+.part-one {
+  width:100%;
+  min-height:90px;
+  background: #DE583A;
+  color:white;
+}
+
+.part-two {
+  width:100%;
+  min-height:90px;
+  background: #464442;
+  color:#FFFFFF;
+}
+
+.part-three {
+  width:100%;
+  min-height:90px;
+  background: #464442;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  font-style: verdana;
+}
+
+.round-all {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  font-style: verdana;
+}
+
+.prize-block {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: verdana;
+}
+
+.circles {
+  width:100px;
+  height:60px;
+}
+
+.subscribe-area {
+  font-size: 15px;
+  padding: 20px 25px;
+  color: #FFFFFF;
+  min-height: 80px;
+  font-family: verdana;
+  background: #464442;
+  text-align: center;
+}
+
+.subscribe-text {
+  margin-top:8px;
+}
+
+.description {
+  background-image: url("tile.jpg");
+  text-align: center;
+  min-height: 700px;
+  padding: 0px;
+}
+
+.income-source {
+  font-size: 18px;
+  font-family: verdana;
+  text-align: left;
+}
+
+.income-source1 {
+  font-size: 16px;
+  font-family: verdana;
+  text-align: justify;
+}
+
+.why-to-do {
+  min-height:1100px;
+  text-align: center;
+}
+
+.reasons {
+  text-align: left;
+
+}
+.reason-desc {
+  font-size: 15px;
+}
+
+.course-features {
+  min-height: 500px;
+  background: #464442;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.symbols {
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+.symbol-details {
+  color: #FFFFFF;
+  font-size: 15px;
+  text-align: center;
+}
+
+.features {
+  background-image: url("tile.jpg");
+  text-align: center;
+  min-height: 650px;
+  font-family: verdana;
+}
+
+.features-one {
+  font-size: 20px;
+  text-align: center;
+}
+
+.features-two {
+  text-align: center;
+  font-size: 15px;
+}
+
+.introduction {
+  color: #FFFFFF;
+  height: 600px;
+  text-align: center;
+  background-image: url("stuff-bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
+}
+
+.instructor {
+  min-height: 1000px;
+}
+
+.instructor-data {
+  font-size: 15px;
+  color: #999999;
+}
+
+.instructor-data2 {
+  font-size: 18px;
+  font-style: verdana;
+}
+
+.feedback {
+  background-image: url("tile.jpg");
+  text-align: center;
+  min-height: 900px;
+  font-family: verdana;
+}
+
+.user-feedback {
+  text-align: left;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.user-images {
+  border-radius: 50%;
+}
+
+.user-names {
+  font-size: 14px;
+  font-style: italic;
+  color: #999999;
+  text-align: left;
+}
+
+.final-page {
+  background-image: url("final.jpg");
+  text-align: center;
+  height: 400px;
+  font-family: verdana;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
+}
+
+.final-heading {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.next {
+  text-decoration: underline;
+  color: #EFDBD6;
+}
+
+.footer-part {
+  min-height: 50px;
+  background: #464442;
+}
+
+.logo1 {
+  padding: 15px 30px;
+}
+
+.logo {
+  padding: 15px 30px;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.patent {
+  font-size: 10px;
+  color: white;
+}
