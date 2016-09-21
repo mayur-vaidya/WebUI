@@ -1,97 +1,89 @@
 .header-first {
+  margin-right: 15px;
   padding-right: 20px;
   width: 100%;
 }
 
 .background-one {
-  background-image: url("bgone.jpg");
   background-attachment: fixed;
-  margin-top:50px;
-  background-size: cover;
-  min-height: 500px;
-  background-repeat: no-repeat;
+  background-image: url("bgone.jpg");
   background-position: center
-}
-
-.fluid-second {
-  with:100%;
-}
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:50px;
+  min-height: 500px;
+  }
 
 .image-logo {
-  max-width: 100%;
   height: auto;
-}
+  max-width: 100%;
+  }
 
 .leftpane {
-  width: 100%;
   height: 100px;
-}
+  width: 100%;
+  }
 
 .title-one {
-  text-align: center;
-  margin-top: 10px;
+  color: #FFFFFF;
   font-size: 45px;
   font-family: verdana;
-  color: #FFFFFF;
-}
+  margin-top: 10px;
+  text-align: center;
+  }
 
 .subtitle-one {
-  text-align:center;
-  font-size: 17px;
   color: #FFFFFF;
+  font-size: 17px;
   font-family: verdana;
-}
+  text-align:center;
+  }
 
 .part-one {
-  width:100%;
-  min-height:90px;
   background: #DE583A;
   color:white;
-}
+  min-height:90px;
+  width:100%;
+  }
 
 .part-two {
-  width:100%;
-  min-height:90px;
   background: #464442;
   color:#FFFFFF;
-}
+  min-height:90px;
+  width:100%;
+  }
 
 .part-three {
-  width:100%;
-  min-height:90px;
   background: #464442;
   color: #FFFFFF;
-  text-align: center;
   font-size: 17px;
   font-style: verdana;
-}
+  min-height:90px;
+  text-align: center;
+  width:100%;
+  }
 
 .round-all {
   color: #FFFFFF;
-  text-align: center;
   font-size: 17px;
   font-style: verdana;
-}
+  text-align: center;
+  }
 
 .prize-block {
   color: #FFFFFF;
-  text-align: center;
   font-size: 14px;
   font-style: verdana;
-}
-
-.circles {
-  width:100px;
-  height:60px;
-}
+  text-align: center;
+  }
 
 .subscribe-area {
-  font-size: 15px;
-  padding: 20px 25px;
-  color: #FFFFFF;
-  min-height: 80px;
-  font-family: verdana;
   background: #464442;
+  color: #FFFFFF;
+  font-family: verdana;
+  font-size: 15px;
+  min-height: 80px;
+  padding: 20px 25px;
   text-align: center;
 }
 
@@ -101,20 +93,20 @@
 
 .description {
   background-image: url("tile.jpg");
-  text-align: center;
   min-height: 700px;
   padding: 0px;
+  text-align: center;
 }
 
 .income-source {
-  font-size: 18px;
   font-family: verdana;
+  font-size: 18px;
   text-align: left;
 }
 
 .income-source1 {
-  font-size: 16px;
   font-family: verdana;
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -125,18 +117,18 @@
 
 .reasons {
   text-align: left;
-
 }
+
 .reason-desc {
   font-size: 15px;
 }
 
 .course-features {
-  min-height: 500px;
   background: #464442;
-  text-align: center;
   color: #FFFFFF;
-}
+  min-height: 500px;
+  text-align: center;
+  }
 
 .symbols {
   color: #FFFFFF;
@@ -151,10 +143,10 @@
 
 .features {
   background-image: url("tile.jpg");
-  text-align: center;
-  min-height: 650px;
   font-family: verdana;
-}
+  min-height: 650px;
+  text-align: center;
+  }
 
 .features-one {
   font-size: 20px;
@@ -162,29 +154,29 @@
 }
 
 .features-two {
-  text-align: center;
   font-size: 15px;
-}
+  text-align: center;
+  }
 
 .introduction {
+  background-attachment: fixed;
+  background-image: url("stuff-bg.jpg");
+  background-position: center
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #FFFFFF;
   height: 600px;
   text-align: center;
-  background-image: url("stuff-bg.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center
-}
+  }
 
 .instructor {
   min-height: 1000px;
 }
 
 .instructor-data {
-  font-size: 15px;
   color: #999999;
-}
+  font-size: 15px;
+  }
 
 .instructor-data2 {
   font-size: 18px;
@@ -193,66 +185,66 @@
 
 .feedback {
   background-image: url("tile.jpg");
-  text-align: center;
-  min-height: 900px;
   font-family: verdana;
-}
+  min-height: 900px;
+  text-align: center;
+  }
 
 .user-feedback {
-  text-align: left;
   font-size: 18px;
   font-style: italic;
-}
+  text-align: left;
+  }
 
 .user-images {
   border-radius: 50%;
 }
 
 .user-names {
+  color: #999999;
   font-size: 14px;
   font-style: italic;
-  color: #999999;
   text-align: left;
 }
 
 .final-page {
-  background-image: url("final.jpg");
-  text-align: center;
-  height: 400px;
-  font-family: verdana;
   background-attachment: fixed;
+  background-image: url("final.jpg");
+  background-position: center
+  text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center
-}
+  font-family: verdana;
+  height: 400px;
+  }
 
 .final-heading {
-  text-align: center;
   color: #FFFFFF;
-}
+  text-align: center;
+  }
 
 .next {
-  text-decoration: underline;
   color: #EFDBD6;
-}
+  text-decoration: underline;
+  }
 
 .footer-part {
-  min-height: 50px;
   background: #464442;
-}
+  min-height: 50px;
+  }
 
 .logo1 {
   padding: 15px 30px;
 }
 
 .logo {
-  padding: 15px 30px;
   color: #FFFFFF;
   font-size: 14px;
+  padding: 15px 30px;
   text-decoration: none;
 }
 
 .patent {
-  font-size: 10px;
   color: white;
-}
+  font-size: 10px;
+  }
