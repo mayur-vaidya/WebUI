@@ -1,7 +1,7 @@
 .header-first {
-  margin-right: 15px;
+
   padding-right: 20px;
-  width: 100%;
+
 }
 
 .background-one {
@@ -11,12 +11,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top:50px;
-  min-height: 500px;
+  min-height: 550px;
   }
 
 .image-logo {
   height: auto;
-  max-width: 100%;
+  width: 100%;
+  text-align: center;
   }
 
 .leftpane {
@@ -39,41 +40,69 @@
   text-align:center;
   }
 
-.part-one {
+.price-one {
   background: #DE583A;
   color:white;
-  min-height:90px;
+  min-height:70px;
+  position: relative;
   width:100%;
+  margin-right: 30px;
   }
 
-.part-two {
+.price-two {
   background: #464442;
   color:#FFFFFF;
-  min-height:90px;
-  width:100%;
+  min-height:70px;
+  position: relative;
+  width:100%
+  margin-right: 30px;
   }
 
-.part-three {
+.price-three {
   background: #464442;
   color: #FFFFFF;
   font-size: 17px;
   font-style: verdana;
-  min-height:90px;
+  min-height:70px;
+  position: relative;
   text-align: center;
   width:100%;
+  margin-left: 30px;
   }
 
 .round-all {
   color: #FFFFFF;
-  font-size: 17px;
+  font-size: 15px;
   font-style: verdana;
+  padding: 10px;
   text-align: center;
+  }
+
+  .icons {
+    padding: 60px 0px;
+  }
+
+.boost {
+  padding-bottom: 50px;
+}
+.rate-list {
+  background-color: #000000;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 18px;
+  left: 20%;
+  padding: 20px;
+  position: absolute;
+  right:20%;
+  text-align: center;
+  top: 70%;
   }
 
 .prize-block {
   color: #FFFFFF;
   font-size: 14px;
   font-style: verdana;
+  padding-bottom: 10px;
   text-align: center;
   }
 
@@ -90,6 +119,14 @@
 .subscribe-text {
   margin-top:8px;
 }
+
+.arrow-image {
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  }
 
 .description {
   background-image: url("tile.jpg");
@@ -173,20 +210,35 @@
   min-height: 1000px;
 }
 
+.instructor-name {
+  float: left;
+  padding: 60px 0px;
+
+}
+
 .instructor-data {
   color: #999999;
   font-size: 15px;
+  margin-top: 100px;
   }
 
 .instructor-data2 {
+  clear: both;
   font-size: 18px;
   font-style: verdana;
+}
+
+.numbers-data {
+  background: #DE583A;
+  border-radius: 50%;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 .feedback {
   background-image: url("tile.jpg");
   font-family: verdana;
-  min-height: 900px;
+  min-height: 1050px;
   text-align: center;
   }
 
@@ -215,7 +267,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   font-family: verdana;
-  height: 400px;
+  height: 600px;
   }
 
 .final-heading {
@@ -248,3 +300,7 @@
   color: white;
   font-size: 10px;
   }
+
+.patent1 {
+  padding-top: 25px;
+}
