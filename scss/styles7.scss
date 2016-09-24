@@ -1,0 +1,14 @@
+@import 'styles6';
+.mainpage{
+  @include dimentions(100%, 600px);
+  background: #F5F5F5;
+  color: blue;
+  font-family: $primary-font;
+  text-align: center;
+}
+
+.subheadings{
+  background: #010101;
+  color: #FFFFFF;
+  @extend .mainpage;
+}

@@ -1,0 +1,18 @@
+@mixin dimentions($height, $width){
+    max-width: $width;
+    min-height: $height;
+}
+
+.main-area {
+    background: #abcdef;
+    font-style: verdana;
+    font-size: 25px;
+    text-align: center;
+    @include dimentions(400px, 100%);
+}
+
+.subtitles {
+  background: #000000;
+  color: #FFFFFF;
+  @extend .main-area;
+}

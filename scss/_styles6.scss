@@ -1,0 +1,7 @@
+$primary-font: verdana;
+$subheading-font: Helvetica;
+
+@mixin dimentions($width, $height){
+  min-height: $height;
+  width: $width;
+}
