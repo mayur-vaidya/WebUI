@@ -1,0 +1,72 @@
+@image: "title.jpg";
+@background1: #FFFFFF;
+@background2: #39ADD1;
+@fontcolor: #gray;
+@fonttext: "verdana";
+
+.dimentions(@background, @height, @width){
+	background: @background;
+  min-height: @height;
+	min-width: @width;
+}
+
+.buttonstyles(@background3, @bwidth, @bcolor, @bradius @fcolor, @fsize, @tdpadding, @rlpadding) {
+  background-color: @background3;
+  border: @bwidth solid @bcolor;
+  border-radius: @bradius;
+  color: @fcolor;
+  font-size: @fsize;
+  padding: @tdpadding @rlpadding;
+  text-align: center;
+  text-decoration: none;
+  }
+
+.one {
+    font-style: @fonttext;
+    .dimentions(@background1,50px, 100%);
+  	margin-top: 15px;
+
+  a{
+		color: @fonttext;
+    list-style-type: none;
+    text-decoration: none;
+    }
+
+  a:hover{
+		color: #000000;
+		text-decoration: none;
+    }
+}
+
+.two{
+    clear: both;
+		.dimentions(@background2, 600px, 100%);
+		font-family: @fonttext;
+  	text-align: center;
+
+  img{
+  	.dimentions(#FFFFFF, 350px, 25%);
+  }
+
+	h1{
+		color: @background1;
+		font-size: 50px;
+    }
+
+	p {
+  	color: #CDEAF4;
+    font-size: 25px;
+  }
+}
+
+.button{
+  .buttonstyles(#39ADD1,1px,#FFFFFF,5px,#CDEAF4,16px,15px,32px);
+}
+
+.button1{
+  .buttonstyles(#FFFFFF,1px,#C4CAD0,5px,#C4CAD0,16px,15px,32px);
+}
+
+.button2{
+
+}
