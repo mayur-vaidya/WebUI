@@ -1,0 +1,13 @@
+.mainpage, .subheadings {
+  min-height: 600px;
+  width: 100%;
+  background: #F5F5F5;
+  font-family: verdana;
+  color: blue;
+  text-align: center; }
+
+.subheadings {
+  background: #010101;
+  color: #FFFFFF; }
+
+/*# sourceMappingURL=example1.css.map */
