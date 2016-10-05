@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Carousel</title>
+</head>
+<style>
+.img {
+  width: 100%;
+  float: left;
+}
+
+.images {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.detailing {
+  width: 100%;
+  height: 100%;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+<script>
+  $("document").ready(function(){
+    scroll();
+  });
+function scroll()
+{
+    var o = $('.images').children().first();
+    var w = o.css('width');
+    var s = o.attr('src');
+    $('.images img:first-child').animate({'margin-left': "-"+w}, {'duration': 1000, 'complete': function(){
+        $('.images').children().first().remove();
+        $('.images').append("<img src='"+s+"' />");
+        scroll();}});
+}
+</script>
+<body>
+<div class='images'>
+    <img class="detailing" src="img1.jpg"  />
+    <img class="detailing" src="img2.jpg"  />
+     <img class="detailing" src="treehouse.png"  />
+     <img class="detailing" src="img1.jpg"  />
+     <img class="detailing" src="img2.jpg"  />
+      <img class="detailing" src="treehouse.png"  />
+</div>
+</body>
