@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>jQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#content").click(function(){
+      $("p").toggle(1000);
+    });
+    $("#stop").click(function(){
+      $("#red").fadeTo(1000, 0.2);
+    });
+    $("#wait").click(function(){
+      $("#yellow").fadeTo(1000, 0.2);
+    });
+    $("#move").click(function(){
+      $("#green").fadeTo(1000, 0.2);
+    });
+    $("#switch").click(function(){
+      $("div").fadeTo(1000, 1.0);
+    });
+  });
+</script>
+</head>
+<body>
+  <button type="button" id="content"> Click Me </button>
+  <button type="button" id="stop"> Red </button>
+  <button type="button" id="wait"> Yellow </button>
+  <button type="button" id="move"> Green </button>
+  <button type="button" id="switch"> Switch on Again </button>
+  <p>This should perform hide and show events on click.</p>
+  <div id="red" style="background:red;border-radius:50%;height:100px;width:100px">
+  </div>
+  <div id="yellow" style="background:yellow;border-radius:50%;height:100px;width:100px">
+  </div>
+  <div id="green" style="background:green;border-radius:50%;height:100px;width:100px">
+  </div>
+
+
+</body>
+</html>

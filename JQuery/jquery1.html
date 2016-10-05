@@ -1,0 +1,77 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title> Slider </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+  <script>
+  var stopevent = false;
+  var images = ["img1.jpg","img2.jpg","treehouse.png"];
+  $("document").ready(function(){
+        $("#effect1").click(function(){
+
+          if(stopevent === false){
+          reqcall(0);
+        }
+        });
+        $("#effect2").click(function(){
+          effect2(0);
+        });
+        $("#stop").click(function(){
+          if(stopevent === false){
+          stopevent = true;
+        }
+        });
+    });
+    var counter = images.length;
+
+function reqcall(index) {
+  //console.log(index);
+  if(stopevent === false){
+    $("#slider").attr("src",images[index]).animate({width: '100%'}, 1000);
+    $("#slider").animate({width: '0%'}, 1000);
+    //console.log(images[index]);
+    window.setTimeout(function() {
+      var next = index + 1;
+      //console.log(next);
+      if(next == (counter)){
+        next = 0;
+      }
+      reqcall(next);
+    }, 2000);
+  }
+}
+
+function effect2(index) {
+  if(stopevent === false){
+    $("#slider").attr("src", images[index]).animate({width: '100%', height: '100%'}, 1000);
+    // $("#slider").animate({marginRight: '+=200'}, 1000);
+    // $("#slider").attr("src",images[index]).animate({marginRight:'-=200'}, 1000);
+    $("#slider").animate({width: '0%', height: '100%'}, 1000);
+    window.setTimeout(function(){
+      var next = index + 1;
+      if(next == counter){
+        next = 0;
+      }
+      effect2(next);
+    }, 2000);
+  }
+}
+  </script>
+  <style>
+    .slider-image {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div align='center'>
+    <div style="height:400px;width:500px;">
+      <img class="slider-image" id="slider" src=""/>
+
+    </div>
+    <button type="button" id="effect1"> First Effect </button>
+    <button type="button" id="effect2"> Second Effect </button>
+    <button type="button" id="stop"> Stop </button>
+</div>
+</body>
+</html>
