@@ -1,0 +1,17 @@
+@mixin balls($var1, $var2) {
+  border-radius: $var1;
+  background: $var2;
+}
+.the-ball{
+  @include balls(50%,#669999);
+  display: block;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+
+}
+
+.play {
+  margin-left: 150px;
+  position: absolute;
+}
