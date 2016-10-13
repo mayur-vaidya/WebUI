@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+<script>
+class Hello {
+  constructor(name) {
+    this.name = name;
+  }
+}
+Hello.prototype.job1 = function() {
+  var v = this.name + " has a job."
+  console.log(v)
+};
+
+
+var h = new Hello('Mark');
+h.job1();
+</script>
+</body>
+</html>
