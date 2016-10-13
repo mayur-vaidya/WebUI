@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+<script>
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(this.name + ' makes a noise.');
+  }
+}
+
+class Dog extends Animal {
+  speaks() {
+    console.log(this.name + ' barks.');
+  }
+}
+
+var d = new Dog('Mitzie');
+d.speaks();
+</script>
+</body>
+</html>
