@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+<script>
+class Cat {
+  constructor(name) {
+    this.name = name;
+  }
+static var count = 1;
+   talk() {
+    console.log(this.name + ' makes a noise.');
+    count++;
+  }
+}
+
+class Lion extends Cat {
+  speak() {
+    //super.speak();
+    console.log(this.name + ' roars.');
+    count++;
+  }
+
+}
+var a = new Lion('Lion');
+console.log(count);
+a.speak();
+a.talk();
+
+</script>
+</body>
+</html>
