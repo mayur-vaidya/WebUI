@@ -1,0 +1,21 @@
+<html>
+
+   <head>
+      <title>AngularJS</title>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+   </head>
+
+   <body>
+      <h1>Results</h1>
+
+      <div ng-app = "" ng-init = "quantity = 1;cost = 30; student = {firstname:'Jayesh',lastname:'Singh',rollno:101};marks = [80,90,75,73,60]">
+         <p>Hello {{student.firstname + " " + student.lastname}}!</p>
+         <p>Expense on Books : {{cost * quantity}} Rs</p>
+         <p>Roll No: {{student.rollno}}</p>
+         <p>Percentage: {{ ( marks[0] + marks[1] + marks[2] + marks[3] + marks[4] ) * 100 / 500}}</p>
+      </div>
+
+
+   </body>
+</html>

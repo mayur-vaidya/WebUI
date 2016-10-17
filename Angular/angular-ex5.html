@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>Angular</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"> </script>
+</head>
+<body>
+  <div ng-app="new1" ng-controller="newModels">
+    <p>First Name: <input type = "text" ng-model = "student.firstName"></p>
+    <p>Last Name: <input type = "text" ng-model = "student.lastName"></p>
+    <p> Fee(in Rs.):<input type = "text" ng-model = "student.fees"></p>
+      <h2> You Entered: {{student.firstName | uppercase }} {{student.lastName | uppercase }} and his base fees is: {{student.fees / 62 | currency}} per month. </h2>
+  </div>
+  <script>
+  var moduleNew = angular.module("new1", []);
+
+  moduleNew.controller('newModels', function($scope){
+    $scope.student = {
+      firstName : "Jason",
+      lastName : "Roy",
+      fees : 2000
+    }
+  });
+  </script>
+</body>
+</html>
