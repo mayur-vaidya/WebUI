@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>Promises</title>
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+</head>
+<body ng-app="DemoApp">
+  <div ng-controller="DemoController">
+    {{firstValue}}<br><hr>
+    {{steps}}
+  </div>
+  <script>
+  angular.module('DemoApp',[])
+  .controller('DemoController', ['$scope', '$q', function($scope, $q){
+    $scope.add = function(num) {
+      var q = $q.defer();
+      $scope.steps++;
+      if(angular.isNumber(num)) {
+        setTimeout(function(){q.resolve(num+2)},1000);
+      }
+      else {
+        //q.resolve(q.reject("Not a Number"));
+        //q.resolve("Not a Number");
+        q.reject("Not a number");
+      }
+      return q.promise;
+    }
+    $scope.firstValue = 0;
+    $scope.steps = 0;
+    $scope.promise = $scope.add($scope.firstValue);
+    $scope.promise.then(function(value){return $scope.add(value);})
+    .then(function(value){return $scope.add(value)})
+    .then(function(value){return $scope.add("value")})
+    .then(function(value){$scope.firstValue = value}, function(err){$scope.firstValue = err})
+  }]);
+  </script>
+</body>
+</html>
