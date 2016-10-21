@@ -1,0 +1,17 @@
+<div >
+	<h2> View Students </h2>
+	Search:
+	<br/>
+		<input type="text" ng-model="name" />
+	<br/>
+	<ul ng-repeat="detail in details | filter:name">
+
+			<li> UserId: {{detail.userId}} </li>
+			<a href="#/{{detail.id}}"><li> ID: {{detail.id}} </li></a>
+			<li> Title: {{detail.title}} </li>
+			<li> Body: {{detail.body}} </li>
+
+	</ul>
+
+	<a href="#/home"> Back</a>
+</div>
