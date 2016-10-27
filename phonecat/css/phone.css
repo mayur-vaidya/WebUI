@@ -1,0 +1,68 @@
+.thumb {
+  float: left;
+  margin-right: 20px;
+  padding: 5px 0px;
+  height: 100px;
+  width: 100px;
+}
+
+.phone-list {
+  height: 115px;
+  margin-top: 20px;
+}
+
+.phone {
+  float: left;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  width: 450px;
+}
+
+.phone-image {
+  height: 400px;
+  padding: 20px;
+  width: 400px;
+}
+
+.phone-thumb {
+  margin-left: 10px;
+}
+
+.phone-thumbs-images {
+  float: left;
+  height: 100px;
+  margin: 15px;
+  padding: 5px;
+  position: relative;
+  width: 100px;
+}
+
+.phone-availability {
+  clear: both;
+}
+
+.phone-info {
+  float: left;
+  margin: 20px;
+}
+
+.spec {
+  clear: both;
+  list-style: none;
+}
+
+ul.spec > li {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+ul.spec span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-area, .sort-area, .phone-name {
+  margin-top: 20px;
+}
