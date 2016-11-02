@@ -1,0 +1,155 @@
+$white : #FFFFFF;
+$black : #000000;
+$gray : #D3D3D3;
+$darkGray : #4D4D4D;
+$red : #FF0000;
+
+.test {
+  .navbar-heading {
+    color: $white;
+    font-size: 35px;
+    font-style: oblique;
+    text-align: center;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+.sidebar {
+  color: $gray;
+  margin-top: 50px;
+  min-height: 600px;
+  position: fixed;
+
+  a {
+    color: $darkGray;
+    display: block;
+    font-size: 20px;
+    padding: 10px 66px;
+    text-align: center;
+
+    &:hover {
+      background: $gray;
+      color: $white;
+      text-decoration: none;
+    }
+
+    &:active {
+      background-color: $gray;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+.active-link {
+  background: $gray;
+  color: $white;
+  text-decoration: none;
+}
+
+.truncate {
+  display: -webkit-box;
+  overflow: hidden;
+  height: 100%;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.all-tiles {
+  background: $gray;
+  margin-top: 50px;
+  min-height: 700px;
+  padding-bottom: 50px;
+
+  .tile {
+    background: $white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 22.7%;
+
+    img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 250px;
+      width: 100%;
+    }
+
+    .tile-heading {
+      @extend .truncate;
+      font-size: 15px;
+      font-weight: bold;
+      -webkit-line-clamp: 1;
+    }
+
+    .tile-content {
+      font-size: 15px;
+      margin: 10px 0px;
+    }
+
+    .details {
+      text-align: center;
+    }
+
+    > div {
+      padding: 10px;
+    }
+  }
+}
+
+.paginations {
+  margin: 20px;
+
+  a{
+    background: $black;
+    border: 1px solid $black;
+    border-radius: 5px;
+    color: $white;
+    margin: 20px;
+    padding: 5px 20px;
+
+    &:hover {
+      background: $darkGray;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.search-area {
+  font-size: 20px;
+  padding-top: 20px;
+
+  .search-box {
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+  }
+}
+
+.contact-us {
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 500px;
+
+  .user-details {
+    border: 2px solid $black;
+    border-radius: 5px;
+    padding: 20px;
+
+    .form-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  .error-msg {
+    color: $red;
+  }
+}
