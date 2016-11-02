@@ -1,0 +1,31 @@
+<header>
+  <nav class = "navbar navbar-inverse navbar-fixed-top test">
+    <div class = "container-fluid navbaar">
+      <div class = "navbar-header">
+        <a class = "navbar-heading">Book Collection</img></a>
+      </div>
+      <ul class = "nav navbar-nav navbar-right">
+        <li><a ui-sref = ".contact">Contact Us</a></li>
+        <li><a ui-sref = ".view">View</a></li>
+      </ul>
+    </div>
+  </nav>
+</header> 
+<div class = "container-fluid">
+  <div class = "row">
+    <div class = "col-xs-2">
+      <div class = "row">
+        <div class = "sidebar" ng-controller = "bookNameController">
+          <a ng-repeat="books in bookNames" ui-sref = ".book({bookName:books, page:1})">{{books | uppercase}}</a>
+        </div>
+      </div>
+    </div>
+    <div class = "col-xs-10">
+      <div class = "row">
+        <div class = "all-tiles">
+          <ui-view> </ui-view>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
