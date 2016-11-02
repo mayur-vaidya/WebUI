@@ -1,0 +1,108 @@
+.test .navbar-heading {
+  color: #FFFFFF;
+  font-size: 35px;
+  font-style: oblique;
+  text-align: center; }
+  .test .navbar-heading:hover {
+    color: #FFFFFF;
+    text-decoration: none; }
+
+.sidebar {
+  color: #D3D3D3;
+  margin-top: 50px;
+  min-height: 600px;
+  position: fixed; }
+  .sidebar a {
+    color: #4D4D4D;
+    display: block;
+    font-size: 20px;
+    padding: 10px 66px;
+    text-align: center; }
+    .sidebar a:hover {
+      background: #D3D3D3;
+      color: #FFFFFF;
+      text-decoration: none; }
+    .sidebar a:active {
+      background-color: #D3D3D3;
+      color: #FFFFFF;
+      text-decoration: none; }
+
+.active-link {
+  background: #D3D3D3;
+  color: #FFFFFF;
+  text-decoration: none; }
+
+.truncate, .all-tiles .tile .tile-heading {
+  display: -webkit-box;
+  overflow: hidden;
+  height: 100%;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; }
+
+.all-tiles {
+  background: #D3D3D3;
+  margin-top: 50px;
+  min-height: 700px;
+  padding-bottom: 50px; }
+  .all-tiles .tile {
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 22.7%; }
+    .all-tiles .tile img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 250px;
+      width: 100%; }
+    .all-tiles .tile .tile-heading {
+      font-size: 15px;
+      font-weight: bold;
+      -webkit-line-clamp: 1; }
+    .all-tiles .tile .tile-content {
+      font-size: 15px;
+      margin: 10px 0px; }
+    .all-tiles .tile .details {
+      text-align: center; }
+    .all-tiles .tile > div {
+      padding: 10px; }
+
+.paginations {
+  margin: 20px; }
+  .paginations a {
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin: 20px;
+    padding: 5px 20px; }
+    .paginations a:hover {
+      background: #4D4D4D;
+      color: white;
+      text-decoration: none; }
+
+.search-area {
+  font-size: 20px;
+  padding-top: 20px; }
+  .search-area .search-box {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; }
+
+.contact-us {
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 500px; }
+  .contact-us .user-details {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 20px; }
+    .contact-us .user-details .form-heading {
+      font-size: 30px;
+      text-align: center; }
+  .contact-us .error-msg {
+    color: #FF0000; }
+
+/*# sourceMappingURL=books.css.map */
