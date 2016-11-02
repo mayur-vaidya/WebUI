@@ -1,0 +1,20 @@
+<div ng-controller = "tileController">
+  <div align="center" class="search-area">
+  Search Your Book: <input type="text" class="search-box" ng-model="searchBook.Title">
+  </div>
+  <div class = "tile" ng-repeat="book in Books | filter : searchBook">
+    <a ui-sref = ".image({bookId:book.ID})"><show-image> </show-image></a>
+    <!-- <a ui-sref = ".image({imageTitle:book.Title})"> <img class = "tile-image" show-image ng-src="{{book.Image}}"/> </a> -->
+    <div>
+      <p class = "tile-heading"> {{book.Title}}</p>
+      <p class = "tile-content truncate"> {{book.Description}}</p>
+      <div class = "details">
+        <button type = "button" class = "btn btn-primary"> Details </button>
+      </div>
+    </div>
+  </div>
+  <div align="center" class = "paginations">
+     <a ui-sref = "homepage.book({bookName:books, page:previousPage})"class = "next"> <p class="glyphicon glyphicon-chevron-left"></p> Previous </a>
+     <a ui-sref = "homepage.book({bookName:books, page:nextPage})" class = "next"> Next <p class="glyphicon glyphicon-chevron-right"></p> </a>
+  </div>
+</div>
