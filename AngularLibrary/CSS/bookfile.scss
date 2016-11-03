@@ -28,8 +28,12 @@ $red : #FF0000;
     color: $darkGray;
     display: block;
     font-size: 20px;
-    padding: 10px 66px;
+    padding: 20px 66px;
     text-align: center;
+
+    @media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
+      padding: 30px 45px;
+    }
 
     &:hover {
       background: $gray;
@@ -43,12 +47,6 @@ $red : #FF0000;
       text-decoration: none;
     }
   }
-}
-
-.active-link {
-  background: $gray;
-  color: $white;
-  text-decoration: none;
 }
 
 .truncate {
@@ -73,6 +71,14 @@ $red : #FF0000;
     margin-top: 20px;
     margin-left: 20px;
     width: 22.7%;
+
+    @media only screen and (min-device-width : 320px) and (max-device-width: 768px) {
+      width: 30%;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+      width: 30.2%;
+    }
 
     img {
       border-top-left-radius: 5px;
@@ -99,6 +105,19 @@ $red : #FF0000;
 
     > div {
       padding: 10px;
+    }
+
+    .modal-image {
+      border-radius: 5px;
+      height: 400px;
+      margin-top: 100px;
+      width: 250px;
+    }
+
+    .modal-close {
+      color: $white;
+      font-size: 50px;
+      margin-top: 50px;
     }
   }
 }
