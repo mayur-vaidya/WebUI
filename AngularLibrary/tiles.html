@@ -3,13 +3,18 @@
   Search Your Book: <input type="text" class="search-box" ng-model="searchBook.Title">
   </div>
   <div class = "tile" ng-repeat="book in Books | filter : searchBook">
-    <a ui-sref = ".image({bookId:book.ID})"><show-image> </show-image></a>
-    <!-- <a ui-sref = ".image({imageTitle:book.Title})"> <img class = "tile-image" show-image ng-src="{{book.Image}}"/> </a> -->
+    <show-image> </show-image>
     <div>
       <p class = "tile-heading"> {{book.Title}}</p>
       <p class = "tile-content truncate"> {{book.Description}}</p>
-      <div class = "details">
-        <button type = "button" class = "btn btn-primary"> Details </button>
+      <div class = "details" ng-controller="MainCtrl">
+        <button type = "button" ui-sref = ".image({bookId:book.ID})" ng-click="toggleModal()"  class = "btn btn-primary"> Details </button>
+        <div  class="container">
+          <modal visible="showModal">
+            <img class = "modal-image" image-not-found ng-src="{{book.Image}}"/>
+            <button type="button" ui-sref = ".image({bookId:''})" class="close modal-close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </modal>
+        </div>
       </div>
     </div>
   </div>
