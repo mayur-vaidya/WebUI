@@ -36,7 +36,9 @@ app.controller('getContactInfo', ['contactData', '$scope', function(contactData,
     }
  }]);
 
-app.controller('ImageModal', function($scope) {
-  var image = $('.tile-image').attr('ng-src');
-  console.log(image);
+app.controller('MainCtrl', function ($scope) {
+  $scope.showModal = false;
+  $scope.toggleModal = function(){
+    $scope.showModal = !$scope.showModal;
+  };
 });
