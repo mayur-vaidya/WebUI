@@ -16,8 +16,11 @@
     color: #4D4D4D;
     display: block;
     font-size: 20px;
-    padding: 10px 66px;
+    padding: 20px 66px;
     text-align: center; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .sidebar a {
+        padding: 30px 45px; } }
     .sidebar a:hover {
       background: #D3D3D3;
       color: #FFFFFF;
@@ -26,11 +29,6 @@
       background-color: #D3D3D3;
       color: #FFFFFF;
       text-decoration: none; }
-
-.active-link {
-  background: #D3D3D3;
-  color: #FFFFFF;
-  text-decoration: none; }
 
 .truncate, .all-tiles .tile .tile-heading {
   display: -webkit-box;
@@ -52,6 +50,12 @@
     margin-top: 20px;
     margin-left: 20px;
     width: 22.7%; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+      .all-tiles .tile {
+        width: 30%; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .all-tiles .tile {
+        width: 30.2%; } }
     .all-tiles .tile img {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -68,6 +72,15 @@
       text-align: center; }
     .all-tiles .tile > div {
       padding: 10px; }
+    .all-tiles .tile .modal-image {
+      border-radius: 5px;
+      height: 400px;
+      margin-top: 100px;
+      width: 250px; }
+    .all-tiles .tile .modal-close {
+      color: #FFFFFF;
+      font-size: 50px;
+      margin-top: 50px; }
 
 .paginations {
   margin: 20px; }
