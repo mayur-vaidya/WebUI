@@ -1,0 +1,21 @@
+<div>
+  <div class="search-area">
+  Search Your Book: <input type="text" class="search-box" ng-model="searchBook.Title">
+  </div>
+  <ui-view></ui-view>
+  <div id = "loading"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></div>
+  <div class = "tile" ng-repeat="book in $ctrl.Books | filter : searchBook">
+    <a ui-sref = ".image({image:'image'})"><img class = "tile-image" ng-src="{{book.Image}}"/></a>
+    <div>
+      <p class = "tile-heading"> {{book.Title}}</p>
+      <p class = "tile-content truncate"> {{book.Description}}</p>
+      <div class = "details" >
+        <button type = "button" ui-sref = ".id({bookId:book.ID})"  class = "btn btn-primary"> Details </button>
+      </div>
+    </div>
+  </div>
+  <div id = "pages" class = "paginations">
+     <a ui-sref = "homepage.book({bookName:books, page:previousPage})"class = "next"> <p class="glyphicon glyphicon-chevron-left"></p> Previous </a>
+     <a ui-sref = "homepage.book({bookName:books, page:nextPage})" class = "next"> Next <p class="glyphicon glyphicon-chevron-right"></p> </a>
+  </div>
+</div>

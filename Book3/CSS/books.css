@@ -1,0 +1,127 @@
+.test .navbar-heading {
+  color: #FFFFFF;
+  font-size: 35px;
+  font-style: oblique;
+  text-align: center; }
+  .test .navbar-heading:hover {
+    color: #FFFFFF;
+    text-decoration: none; }
+
+.sidebar {
+  color: #D3D3D3;
+  margin-top: 50px;
+  min-height: 600px;
+  position: fixed; }
+  .sidebar a {
+    color: #4D4D4D;
+    display: block;
+    font-size: 20px;
+    padding: 20px 66px;
+    text-align: center; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .sidebar a {
+        padding: 30px 45px; } }
+    .sidebar a:hover {
+      background: #D3D3D3;
+      color: #FFFFFF;
+      text-decoration: none; }
+    .sidebar a:active {
+      background-color: #D3D3D3;
+      color: #FFFFFF;
+      text-decoration: none; }
+
+.all-tiles {
+  background: #D3D3D3;
+  margin-top: 50px;
+  min-height: 700px;
+  padding-bottom: 50px; }
+  .all-tiles .tile {
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 22.7%; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+      .all-tiles .tile {
+        width: 30%; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .all-tiles .tile {
+        width: 30.2%; } }
+    .all-tiles .tile .tile-image {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 250px;
+      width: 100%; }
+    .all-tiles .tile .tile-heading {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1.2em;
+      height: 2.4em;
+      overflow: hidden; }
+    .all-tiles .tile .tile-content {
+      font-size: 15px;
+      line-height: 1.2em;
+      margin: 10px 0px;
+      height: 3.6em;
+      overflow: hidden; }
+    .all-tiles .tile .details {
+      text-align: center; }
+    .all-tiles .tile > div {
+      padding: 10px; }
+    .all-tiles .tile .modal-image {
+      border-radius: 5px;
+      height: 400px;
+      margin-top: 100px;
+      width: 250px; }
+    .all-tiles .tile .modal-close {
+      color: #FFFFFF;
+      font-size: 50px;
+      margin-top: 50px; }
+
+.paginations {
+  display: block;
+  margin: 20px;
+  text-align: center; }
+  .paginations a {
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin: 20px 40px;
+    padding: 5px 20px; }
+    .paginations a:hover {
+      background: #4D4D4D;
+      color: white;
+      text-decoration: none; }
+
+.search-area {
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center; }
+  .search-area .search-box {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; }
+
+.contact-us {
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 500px; }
+  .contact-us .user-details {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 20px; }
+    .contact-us .user-details .form-heading {
+      font-size: 30px;
+      text-align: center; }
+
+.error-msg {
+  color: #FF0000; }
+
+#loading {
+  font-size: 50px;
+  margin-top: 200px;
+  text-align: center; }
+
+/*# sourceMappingURL=books.css.map */

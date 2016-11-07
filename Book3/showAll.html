@@ -1,0 +1,17 @@
+<div class = "container-fluid">
+  <h2>Data of visitors who wants to connect with us.</h2>
+  <table class = "table table-striped" ng-controller = "ViewData">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Mobile</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat = "details in userData">
+        <td>{{details.fname}}</td>
+        <td>{{details.mob}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

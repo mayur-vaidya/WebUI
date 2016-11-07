@@ -1,0 +1,18 @@
+<div class = "contact-us">
+  <form class = "user-details">
+    <div class = "form-heading"> Contact Us </div>
+    <div class = "form-group">
+      <label>Name:(Mendatory)</label>
+      <input type = "text" class = "form-control" ng-model = "$ctrl.userName" placeholder = "Your name here.">
+      <p class = "error-msg">{{$ctrl.errorMsg1}}</p>
+    </div>
+    <div class = "form-group">
+      <label>Contact No.:(Mendatory)</label>
+      <input type = "text" ng-model = "$ctrl.val" numbers-only class = "form-control mobile" placeholder = "Enter 10 digit valid mobile number."/>
+    </div>
+    <p class = "error-msg">{{$ctrl.errorMsg2}}</p>
+    <div align = "center">
+      <button type = "button" class = "btn btn-default" ng-click = "$ctrl.saveDetail()">Submit</button>
+    </div>
+  </form>
+</div>
